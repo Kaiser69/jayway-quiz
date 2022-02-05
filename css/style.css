@@ -184,6 +184,20 @@ body {
     display: inline-block;
 
 }
+
+.optionBox span.right {
+   background-color: #00ab00;
+   border-color: #00ab00;
+   color: #fff;
+}
+
+.optionBox span.wrong {
+    background-color: #ff3b0e;
+    border-color: #ff3b0e;
+    color: #fff;
+}
+
+
 /* Question css style end  */
 
 /* media query style*/

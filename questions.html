@@ -15,25 +15,26 @@
            </div>
 
            <div class="header">
-               <div class="scoreBox">Score : 0</div>
-               <div class="timerBox">Time left: 00:00</div>
+               <div class="scoreBox">Score : <span>0</span> </div>
+               <div class="timerBox">Time left : <span></span></div>
            </div>
 
            <div class="questionBox">
                Where is the correct place to insert a JavaScript?
            </div>
            <div class="optionBox">
-                <span>The head section</span>
-                <span>Both the head section and the body section are correct</span>
-                <span>The body section</span>
-                <span>None of the above</span>
+                <span  onclick="checkAnswer(this)" data-opt="1"></span>
+                <span  onclick="checkAnswer(this)" data-opt="2"></span>
+                <span  onclick="checkAnswer(this)" data-opt="3"></span>
+                <span  onclick="checkAnswer(this)" data-opt="4"></span>
            </div>
 
            <div class="footer">
-               <button>
+               <button onclick="showNext()">
                    Next
                </button>
-               <button>
+
+               <button onclick="showResult(1)">
                    Show Result
                </button>
            </div>
@@ -49,11 +50,11 @@
                <label>Questions : </label>
                <span id="totalQuestion">10</span>
                <label>Attempt : </label>
-               <span id="attemptQuestion">1</span>
+               <span id="attemptQuestion">0</span>
                <label>Correct : </label>
-               <span id="correctAnswers">1</span>
+               <span id="correctAnswers">0</span>
                <label>Wrong : </label>
-               <span id="wrongAnswers">1</span>
+               <span id="wrongAnswers">0</span>
            </div>
 
            <div class="buttonBox">
