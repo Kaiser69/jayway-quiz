@@ -120,20 +120,14 @@ function showResult(j) {
         return;
      }
 
-    showResult();
-       
-}
-  
-function result() {
-
-    $("#questionScreen").hide();
+     $("#questionScreen").hide();
     $("#resultScreen").show();
 
     $("#totalQuestion").text(totalQuestion);
     $("#attemptQuestion").text(attempt);
     $("#correctAnswers").text(score);
     $("#wrongAnswers").text(wrong);
-    
+       
 }
-
+  
 // Function for result end
